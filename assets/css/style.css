@@ -22,12 +22,7 @@ header {
   header {
       padding: 10px 15px 20px 25px;
   }
-  header h1 {
-      font-weight: bold;
-      font-size: 36px;
-      color: #fce138;
-      margin: 0;
-  }
+  
 
   header a {
       color: #fce138;
@@ -37,10 +32,10 @@ header {
       text-decoration: none;
       color: #fce138;
   }
-
-  header nav {
-      float: right;
-      margin: 7px 0;
+ header {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
   }
 
   header nav li {
