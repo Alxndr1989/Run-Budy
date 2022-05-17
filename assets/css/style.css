@@ -11,11 +11,18 @@ header {
   /* Applies 20px to every side (top, right, bottom, left)*/
   header {
       padding: 20px;
+      position: -webkit-sticky;
+      background-image: url("../images/hero-bg.jpeg");
+          background-size: cover;
+          background-position: 80%;
+          background-attachment: fixed;
   }
 
   /* Applies 20 px to the top and the bottom, then 35 px to the left and the right*/
   header {
       padding: 20px 35px;
+      position: sticky;
+      top: 0;
   }
 
   /* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left*/
@@ -57,6 +64,13 @@ flex-wrap: wrap;
     font-size: 1.55vw;
   }
 
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
   header h1 {
       font-weight: bold;
       font-size: 36px;
@@ -119,10 +133,11 @@ flex-wrap: wrap;
           background-image: url("../images/hero-bg.jpeg");
           align-items: flex-start;
           background-size: cover;
-          background-position: center;
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
+          background-position: 80%;
+          background-attachment: fixed;
          
       }
       .hero-cta {
@@ -147,8 +162,10 @@ flex-wrap: wrap;
           padding: 20px;
           width: 40%;
           margin: 3.5%;
-         
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           color: #024e76;
+          opacity: 80%;
+          border-radius: 15px;
           
       }
 
@@ -169,6 +186,12 @@ flex-wrap: wrap;
         color: #024e76;
         width: 100%;
         margin-bottom: 15px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255, 0.75);
+      }
+      .form-input:focus {
+        background-color: rgba(255,255,255, 1);
+        outline: none;
       }
 
       .hero-form label {
@@ -180,6 +203,10 @@ flex-wrap: wrap;
         border: none;
         padding: 10px 20px;
         font-size: 16px;
+        border-radius: 10px;
+      }
+      .hero-form button:hover {
+        background-color: #39a6b2;  
       }
       .hero-cta .hero-form {
         width: 100%;
@@ -261,6 +288,10 @@ flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
       }
+      .step:last-child {
+        border-bottom: none;
+      }
+      
  .step-info {
    flex:  70%;
    display: flex;
@@ -406,6 +437,13 @@ flex-wrap: wrap;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+  opacity: 80%;
+  background-color: rgba(255,255,255, 0.75);
+
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);;
 }
 
 .contact-form button {
@@ -416,8 +454,12 @@ flex-wrap: wrap;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
-
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
 .contact-info a {
   color: #fce138;
 }
@@ -430,6 +472,7 @@ flex-wrap: wrap;
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -446,6 +489,13 @@ flex-wrap: wrap;
   header nav ul li a {
     font-size: 20px;
   }
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
 
   footer h2, footer div {
     text-align: center;
@@ -531,8 +581,25 @@ flex-wrap: wrap;
   }
   .contact-form {
     order: 3;
+    
+  }
+  .contact-form input:focus, .contact-form textarea:focus {
+  background-color: greenyellow;
+  outline: none;
   }
 }
 
+header h1 {
+  /* add alongside your existing declarations */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
+header nav ul li a {
+  /* and here */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
+.hero-cta h2 {
+  /* and here */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
