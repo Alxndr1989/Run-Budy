@@ -9,7 +9,7 @@ A website that offers fitness training services.
 * CSS
 1111
 ## Website
-https://alxndr1989.github.io/run-budy/
+https://github.com/Alxndr1989/Run-Budy.git
 
 ## Contribution
 Made with ❤️ by Alex Fiurkov
